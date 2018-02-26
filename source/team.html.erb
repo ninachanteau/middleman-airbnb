@@ -1,0 +1,14 @@
+<div id="team">
+  <div class="team-content text-center">
+    <h1>This page was built with <i class="fa fa-heart"></i> by</h1>
+    <ul class="list-inline text-center">
+      <% buddies = %w(xavier nina) %>
+      <% buddies.each do |buddy| %>
+        <li>
+          <%= image_tag "#{buddy}.jpg", class: "img-circle avatar-large" %>
+          <h2><%= buddy.capitalize %></h2>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
